@@ -14,9 +14,9 @@ class PostsTest < ApplicationSystemTestCase
     visit posts_url
     click_on "New Post"
 
-    fill_in "Email", with: @post.email
-    fill_in "Password", with: @post.password
-    fill_in "Username", with: @post.username
+    fill_in "Author", with: @post.author
+    fill_in "Body", with: @post.body
+    fill_in "Title", with: @post.title
     click_on "Create Post"
 
     assert_text "Post was successfully created"
@@ -27,9 +27,9 @@ class PostsTest < ApplicationSystemTestCase
     visit posts_url
     click_on "Edit", match: :first
 
-    fill_in "Email", with: @post.email
-    fill_in "Password", with: @post.password
-    fill_in "Username", with: @post.username
+    fill_in "Author", with: @post.author
+    fill_in "Body", with: @post.body
+    fill_in "Title", with: @post.title
     click_on "Update Post"
 
     assert_text "Post was successfully updated"
