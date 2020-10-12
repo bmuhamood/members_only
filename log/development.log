@@ -624,3 +624,1951 @@ Processing by PostsController#create as HTML
 Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 5322)
 
 
+Started GET "/" for 127.0.0.1 at 2020-10-13 01:27:26 +0400
+  [1m[35m (22.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+Completed 500 Internal Server Error in 181ms (ActiveRecord: 0.0ms | Allocations: 46647)
+
+
+  
+NoMethodError (undefined method `get_user' for #<PostsController:0x00007fbfde2a5850>):
+  
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:200:in `block (2 levels) in halting'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:201:in `block in halting'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-10-13 01:27:35 +0400
+Processing by PostsController#index as HTML
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 0.0ms | Allocations: 46553)
+
+
+  
+NoMethodError (undefined method `get_user' for #<PostsController:0x00007fbfde4fb5f0>):
+  
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:200:in `block (2 levels) in halting'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:201:in `block in halting'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.3.4) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.4) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.4) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.4) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.4) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.4) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-10-13 01:28:07 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1492)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 648ms (Views: 559.2ms | ActiveRecord: 0.9ms | Allocations: 28133)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-10-13 01:32:30 +0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1245.3ms | Allocations: 8715)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1427.1ms | Allocations: 9046)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2000ms (Views: 1684.9ms | ActiveRecord: 0.8ms | Allocations: 17226)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-10-13 01:32:52 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"a51v2+4FPxi3noYCKf2+CwUD1lEusuul7gAkstOaEpCdcXPNmCWUYBxTIic2AWbTAZCxqPXG67HlwfnUs4EbgA==", "post"=>{"title"=>"Hullo Test 1", "body"=>"This is a test post"}, "commit"=>"Create Post"}
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.9ms | Allocations: 854)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 938)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 140ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 8043)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 01:37:08 +0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 59.4ms | Allocations: 924)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 118ms (Views: 114.1ms | ActiveRecord: 0.2ms | Allocations: 5996)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-10-13 01:37:10 +0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 6.3ms | Allocations: 2243)
+  Rendered posts/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2549)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 3166)
+
+
+  
+ActionView::Template::Error (undefined method `username' for nil:NilClass):
+    13: 
+    14:   <div class="field">
+    15:     <%= form.label :username %>
+    16:     <%= form.hidden_field :username, :value => current_user.username %>
+    17:   </div>
+    18: 
+    19:   <div class="field">
+  
+app/views/posts/_form.html.erb:16
+app/views/posts/_form.html.erb:1
+app/views/posts/new.html.erb:3
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 01:37:29 +0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 650)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 25.6ms | ActiveRecord: 3.5ms | Allocations: 4693)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-10-13 01:37:40 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 16.9ms | Allocations: 519)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 721.3ms | Allocations: 21423)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 757ms (Views: 736.9ms | ActiveRecord: 1.0ms | Allocations: 31675)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-10-13 01:37:52 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 201)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 72.9ms | Allocations: 9320)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 145ms (Views: 84.8ms | ActiveRecord: 0.0ms | Allocations: 14642)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-10-13 01:38:03 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"DqKBVECeTvEHKFIWCnBmjDiqQ0LFSs33fe98FHzim1Qwu8qxZtOFhhB3+0Y42nN2GFsxLawH85Qd2JVxr3CkCg==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (43.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1131ms (ActiveRecord: 43.2ms | Allocations: 5727)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-13 01:38:05 +0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 652)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 4720)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-10-13 01:38:09 +0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_form.html.erb:16
+  Rendered posts/_form.html.erb (Duration: 7.8ms | Allocations: 1782)
+  Rendered posts/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1864)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.4ms | Allocations: 5900)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-10-13 01:38:23 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"BM42PdOdckAyiS5kK7u7vLV0EsrjflgLTsUxEC4Vx2fFwWpcsF7SBjG56DwyiJW0fPp+vIvDOtvScxOveNBczw==", "post"=>{"username"=>"", "title"=>"Hullo Test 1", "body"=>"Hullo, this is a test post"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 886)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'username' for Post.):
+  
+app/controllers/posts_controller.rb:28:in `create'
+  [1m[35m (24.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (29.1ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (57.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (75.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/users/new" for 127.0.0.1 at 2020-10-13 01:42:32 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-10-13 01:42:38 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 91)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 24.9ms | Allocations: 9330)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 33.8ms | ActiveRecord: 2.8ms | Allocations: 20186)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-10-13 01:43:01 +0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"bt4mlEL2N+tEjevgHvRdoU8Jnt6QXwCkcEEwSBC9RzhOVnsWxx+yEAhQdTMTY8Cmwh7y0daenmINNLQuOLKgtg==", "user"=>{"username"=>"bmuhamood", "email"=>"test@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :username[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "test@test.com"], ["encrypted_password", "$2a$12$ISU2nlCyqGnPW47f4gAwf.LH4AZQaB9FcJC1.YK5x2yYp1QYok0p6"], ["created_at", "2020-10-12 21:43:01.573646"], ["updated_at", "2020-10-12 21:43:01.573646"]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 305ms (ActiveRecord: 8.4ms | Allocations: 7830)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-13 01:43:01 +0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1081)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 152ms (Views: 123.6ms | ActiveRecord: 2.4ms | Allocations: 5714)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-10-13 01:43:05 +0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/_form.html.erb:16
+  Rendered posts/_form.html.erb (Duration: 5.3ms | Allocations: 1818)
+  Rendered posts/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1900)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 16.3ms | ActiveRecord: 0.5ms | Allocations: 8833)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-10-13 01:43:20 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"DS40TgpcASea8uhHyvPBEuC49U3Z8bU60RHP4ImXgPLMIWgvaZ+hYZnCLh/TwO8aKTaZO7FM1+pNp+1f31IbWg==", "post"=>{"username"=>"", "title"=>"Hullo Test 1", "body"=>"Hello, this is a test post"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 898)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'username' for Post.):
+  
+app/controllers/posts_controller.rb:28:in `create'
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 01:44:35 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (4.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 20.4ms | Allocations: 1165)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 45.5ms | ActiveRecord: 5.5ms | Allocations: 5747)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-10-13 01:44:37 +0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/_form.html.erb:16
+  Rendered posts/_form.html.erb (Duration: 18.9ms | Allocations: 6676)
+  Rendered posts/new.html.erb within layouts/application (Duration: 19.3ms | Allocations: 6758)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 27.0ms | ActiveRecord: 1.4ms | Allocations: 13783)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-10-13 01:44:46 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"eYbuI1PUN4W1+62cgQfV3Fstwc5f6RVEHRbs/Tu2v1O4ibJCMBeXw7bLa8SYNPvUkqOtuDdUd5SBoM5CbXMk+w==", "post"=>{"username"=>"", "title"=>"Hullo Test 1", "body"=>"Hello, this is a test post"}, "commit"=>"Create Post"}
+[31mUnpermitted parameter: :username[0m
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/_form.html.erb:16
+  Rendered posts/_form.html.erb (Duration: 6.2ms | Allocations: 1902)
+  Rendered posts/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1984)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.3ms | Allocations: 7435)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 01:44:58 +0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 638)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 4673)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-10-13 01:45:02 +0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/_form.html.erb:16
+  Rendered posts/_form.html.erb (Duration: 14.0ms | Allocations: 1750)
+  Rendered posts/new.html.erb within layouts/application (Duration: 14.5ms | Allocations: 1832)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.2ms | Allocations: 5860)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-10-13 01:45:47 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/_form.html.erb:16
+  Rendered posts/_form.html.erb (Duration: 25.9ms | Allocations: 6685)
+  Rendered posts/new.html.erb within layouts/application (Duration: 26.4ms | Allocations: 6768)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 228ms (Views: 39.8ms | ActiveRecord: 2.5ms | Allocations: 14787)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-10-13 01:47:26 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/_form.html.erb:16
+  Rendered posts/_form.html.erb (Duration: 55.0ms | Allocations: 6692)
+  Rendered posts/new.html.erb within layouts/application (Duration: 55.9ms | Allocations: 6775)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 92ms (Views: 64.3ms | ActiveRecord: 6.2ms | Allocations: 14795)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-10-13 01:47:38 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"jq//y4TZgQLM491sOGgvGR/Rrfl6he5owQPA5avkXjWuJ6JJATAE+YA+Q781/7IeksbB9jxEcK68dkSDg+u5uw==", "post"=>{"username"=>"", "title"=>"Hullo Test 1", "body"=>"Hullo, this is a test post"}, "commit"=>"Create Post"}
+[31mUnpermitted parameter: :username[0m
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/_form.html.erb:16
+  Rendered posts/_form.html.erb (Duration: 4.7ms | Allocations: 1902)
+  Rendered posts/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1984)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 16.4ms | ActiveRecord: 0.2ms | Allocations: 7404)
+
+
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 01:50:31 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 994)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 18.8ms | ActiveRecord: 2.5ms | Allocations: 11525)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-10-13 01:50:33 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.0ms | Allocations: 927)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1009)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 10.8ms | ActiveRecord: 0.5ms | Allocations: 8757)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-10-13 01:50:45 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"Iax9TIo22Cx89y6IEIoAnGX8Owy7p2Q2ta5yKmleoNjgoyEt6fV4an/H6NAJuS6UrHJXetMaBuYpGFCVP5s7cA==", "post"=>{"username"=>"", "title"=>"Hullo Test 1", "body"=>"Hullo, this is test error"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+[31mUnpermitted parameter: :username[0m
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.7ms | Allocations: 1018)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1100)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 19.8ms | ActiveRecord: 0.2ms | Allocations: 7361)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 01:55:05 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 993)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1572ms (Views: 1435.9ms | ActiveRecord: 2.0ms | Allocations: 11524)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-10-13 01:55:10 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.9ms | Allocations: 924)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1006)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 864ms (Views: 15.8ms | ActiveRecord: 0.7ms | Allocations: 12335)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-10-13 01:55:20 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"DiL4meiiQX9A4gvQz6M8PHcWv745iF3rscbThJjHQUDPLaT4i2HhOUPSzYjWkBI0vpjTyFE1PzstcPE7zgLa6A==", "post"=>{"username"=>"", "title"=>"Hullo Test 1", "body"=>"Hullo, test Post"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+[31mUnpermitted parameter: :username[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Hullo Test 1"], ["body", "Hullo, test Post"], ["created_at", "2020-10-12 21:55:20.413066"], ["updated_at", "2020-10-12 21:55:20.413066"], ["user_id", 2]]
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+  [1m[35m (43.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:31:in `block in create'
+Redirected to 
+Completed 500 Internal Server Error in 354ms (ActiveRecord: 44.2ms | Allocations: 96262)
+
+
+  
+NoMethodError (undefined method `post_url' for #<PostsController:0x00007fbfdba93cb8>
+Did you mean?  posts_url):
+  
+app/controllers/posts_controller.rb:32:in `block (2 levels) in create'
+app/controllers/posts_controller.rb:30:in `create'
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 01:56:29 +0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 19.5ms | Allocations: 6769)
+Completed 500 Internal Server Error in 123ms (ActiveRecord: 3.3ms | Allocations: 13801)
+
+
+  
+ActionView::Template::Error (undefined method `username' for #<Post:0x00007fbfda6dd728>
+Did you mean?  user=):
+    15:   <tbody>
+    16:     <% @posts.each do |post| %>
+    17:       <tr>
+    18:         <td><%= post.username %></td>
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', post %></td>
+  
+app/views/posts/index.html.erb:18
+app/views/posts/index.html.erb:16
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 01:57:18 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 18.2ms | Allocations: 3726)
+Completed 500 Internal Server Error in 148ms (ActiveRecord: 0.4ms | Allocations: 5878)
+
+
+  
+ActionView::Template::Error (undefined method `current_user' for #<Post:0x00007fbfdab8ac58>):
+    15:   <tbody>
+    16:     <% @posts.each do |post| %>
+    17:       <tr>
+    18:         <td><%= post.current_user.user_id %></td>
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', post %></td>
+  
+app/views/posts/index.html.erb:18
+app/views/posts/index.html.erb:16
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 01:57:28 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 3694)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms | Allocations: 5845)
+
+
+  
+ActionView::Template::Error (undefined method `current_user' for #<Post:0x00007fbfdbcc5798>):
+    15:   <tbody>
+    16:     <% @posts.each do |post| %>
+    17:       <tr>
+    18:         <td><%= post.current_user %></td>
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', post %></td>
+  
+app/views/posts/index.html.erb:18
+app/views/posts/index.html.erb:16
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 01:58:11 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 3693)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms | Allocations: 5844)
+
+
+  
+ActionView::Template::Error (undefined method `current_user' for #<Post:0x00007fbfda28a310>):
+    15:   <tbody>
+    16:     <% @posts.each do |post| %>
+    17:       <tr>
+    18:         <!-- <td><%= post.current_user %></td> -->
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', post %></td>
+  
+app/views/posts/index.html.erb:18
+app/views/posts/index.html.erb:16
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 01:58:37 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 190.9ms | Allocations: 71519)
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 0.5ms | Allocations: 73670)
+
+
+  
+ActionView::Template::Error (undefined method `post_path' for #<#<Class:0x00007fbfe300dfc0>:0x00007fbfe300c670>
+Did you mean?  posts_path
+               font_path
+               root_path):
+    18:        
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', post %></td>
+    22:         <td><%= link_to 'Edit', edit_post_path(post) %></td>
+    23:         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+  
+app/views/posts/index.html.erb:21
+app/views/posts/index.html.erb:16
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 01:59:29 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 206.6ms | Allocations: 72238)
+Completed 500 Internal Server Error in 213ms (ActiveRecord: 0.4ms | Allocations: 74389)
+
+
+  
+ActionView::Template::Error (undefined method `edit_post_path' for #<#<Class:0x00007fbfdaa226e0>:0x00007fbfdba6bee8>
+Did you mean?  edit_password_path):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', posts_path %></td>
+    22:         <td><%= link_to 'Edit', edit_post_path(post) %></td>
+    23:         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+    25:     <% end %>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 01:59:47 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 216.3ms | Allocations: 72272)
+Completed 500 Internal Server Error in 222ms (ActiveRecord: 0.3ms | Allocations: 74423)
+
+
+  
+ActionView::Template::Error (undefined method `edit_posts_path' for #<#<Class:0x00007fbfde6103c8>:0x00007fbfdbc79fc8>
+Did you mean?  edit_password_path):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', posts_path %></td>
+    22:         <td><%= link_to 'Edit', edit_posts_path(post) %></td>
+    23:         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+    25:     <% end %>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:00:06 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 375.0ms | Allocations: 139717)
+Completed 500 Internal Server Error in 526ms (ActiveRecord: 0.7ms | Allocations: 141868)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x00007fbfde3b5358>:0x00007fbfde3a3860>
+Did you mean?  post
+               @posts):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', posts_path %></td>
+    22:         <td><%= link_to 'Edit', edit_posts_path(posts) %></td>
+    23:         <td><%= link_to 'Destroy', posts, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+    25:     <% end %>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:00:52 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 206.3ms | Allocations: 72269)
+Completed 500 Internal Server Error in 215ms (ActiveRecord: 0.4ms | Allocations: 74420)
+
+
+  
+ActionView::Template::Error (undefined method `edit_posts_path' for #<#<Class:0x00007fbfe3196cc0>:0x00007fbfe3195398>
+Did you mean?  edit_password_path):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', posts_path %></td>
+    22:         <td><%= link_to 'Edit', edit_posts_path(@posts) %></td>
+    23:         <td><%= link_to 'Destroy', posts, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+    25:     <% end %>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:01:18 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 191.4ms | Allocations: 72264)
+Completed 500 Internal Server Error in 220ms (ActiveRecord: 0.6ms | Allocations: 74416)
+
+
+  
+ActionView::Template::Error (undefined method `edit_posts_path' for #<#<Class:0x00007fbfde387958>:0x00007fbfde37da48>
+Did you mean?  edit_password_path):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', posts_path %></td>
+    22:         <td><%= link_to 'Edit', edit_posts_path(@post) %></td>
+    23:         <td><%= link_to 'Destroy', posts, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+    25:     <% end %>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:02:53 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 175.7ms | Allocations: 72236)
+Completed 500 Internal Server Error in 381ms (ActiveRecord: 0.4ms | Allocations: 74388)
+
+
+  
+ActionView::Template::Error (undefined method `edit_post_path' for #<#<Class:0x00007fbfdbc73bf0>:0x00007fbfdbc70ab8>
+Did you mean?  edit_password_path):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', posts_path %></td>
+    22:         <td><%= link_to 'Edit', edit_post_path(@post) %></td>
+    23:         <td><%= link_to 'Destroy', posts, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+    25:     <% end %>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:04:12 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 219.1ms | Allocations: 72009)
+Completed 500 Internal Server Error in 226ms (ActiveRecord: 0.4ms | Allocations: 73327)
+
+
+  
+ActionView::Template::Error (undefined method `edit_post_path' for #<#<Class:0x00007fbfdbc73bf0>:0x00007fbfdbbe8a00>
+Did you mean?  edit_password_path):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', posts_path %></td>
+    22:         <td><%= link_to 'Edit', edit_post_path(@post) %></td>
+    23:         <td><%= link_to 'Destroy', posts, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+    25:     <% end %>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:04:18 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 203.9ms | Allocations: 71987)
+Completed 500 Internal Server Error in 208ms (ActiveRecord: 0.4ms | Allocations: 73304)
+
+
+  
+ActionView::Template::Error (undefined method `edit_post_path' for #<#<Class:0x00007fbfdbc73bf0>:0x00007fbfdaa7b9c0>
+Did you mean?  edit_password_path):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', posts_path %></td>
+    22:         <td><%= link_to 'Edit', edit_post_path(@post) %></td>
+    23:         <td><%= link_to 'Destroy', posts, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+    25:     <% end %>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /Users/mac/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281)
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:09:10 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:77:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 30.3ms | Allocations: 4837)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 4.2ms | Allocations: 11869)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"posts", :id=>nil}, missing required keys: [:id]):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', posts_path %></td>
+    22:         <td><%= link_to 'Edit', edit_post_path(@post) %></td>
+    23:         <td><%= link_to 'Destroy', posts, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+    25:     <% end %>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:11:53 +0400
+  [1m[35m (60.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:78:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 213.1ms | Allocations: 5657)
+Completed 500 Internal Server Error in 583ms (ActiveRecord: 2.5ms | Allocations: 14904)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"posts", :id=>nil}, missing required keys: [:id]):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', posts_path %></td>
+    22:         <td><%= link_to 'Edit', edit_post_path(@post) %></td>
+    23:         <td><%= link_to 'Destroy', posts, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+    25:     <% end %>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:13:55 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:78:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 25.5ms | Allocations: 4823)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 3.5ms | Allocations: 11937)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"posts", :id=>nil}, missing required keys: [:id]):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', posts_path %></td>
+    22:         <td><%= link_to 'Edit', edit_post_path(@post) %></td>
+    23:         <td><%= link_to 'Destroy', posts, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+    25:     <% end %>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:14:02 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:78:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1624)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.9ms | Allocations: 2958)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"posts", :id=>nil}, missing required keys: [:id]):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', posts_path %></td>
+    22:         <td><%= link_to 'Edit', edit_post_path(@post) %></td>
+    23:         <td><%= link_to 'Destroy', posts, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+    25:     <% end %>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:15:23 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:78:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 4822)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 3.3ms | Allocations: 11846)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"posts", :id=>nil}, missing required keys: [:id]):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', posts_path %></td>
+    22:         <td><%= link_to 'Edit', edit_post_path(@post) %></td>
+    23:         <td><%= link_to 'Destroy', posts, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+    25:     <% end %>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+Started POST "/posts" for 127.0.0.1 at 2020-10-13 02:15:53 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"Q6rd9faAIOPwa01U1BPVdU2dWz4WI0StgNQzH15zE8FjIoB3c2mlGLy204fZhEhywIo3MVDi2mv9obd5dnz0Tw==", "post"=>{"username"=>"", "title"=>"Hullo Test 2", "body"=>"Hullo, this is test post2"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:78:in `get_user'
+[31mUnpermitted parameter: :username[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:32:in `block in create'
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Hullo Test 2"], ["body", "Hullo, this is test post2"], ["created_at", "2020-10-12 22:15:53.863534"], ["updated_at", "2020-10-12 22:15:53.863534"], ["user_id", 2]]
+  ↳ app/controllers/posts_controller.rb:32:in `block in create'
+  [1m[35m (160.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:32:in `block in create'
+Redirected to 
+Completed 500 Internal Server Error in 368ms (ActiveRecord: 161.4ms | Allocations: 7469)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+app/controllers/posts_controller.rb:33:in `block (2 levels) in create'
+app/controllers/posts_controller.rb:31:in `create'
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:16:31 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:78:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 4832)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 3.7ms | Allocations: 11848)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"posts", :id=>nil}, missing required keys: [:id]):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', posts_path %></td>
+    22:         <td><%= link_to 'Edit', edit_post_path(@post) %></td>
+    23:         <td><%= link_to 'Destroy', posts, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+    25:     <% end %>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:16:39 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:78:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 16.2ms | Allocations: 4892)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 2.2ms | Allocations: 11914)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"posts", :id=>nil}, missing required keys: [:id]):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', posts_path %></td>
+    22:         <td><%= link_to 'Edit', edit_post_path(@post) %></td>
+    23:         <td><%= link_to 'Destroy', posts, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+    25:     <% end %>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:16:46 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:78:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 4850)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 2.0ms | Allocations: 11865)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"posts", :id=>nil}, missing required keys: [:id]):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', posts_path %></td>
+    22:         <td><%= link_to 'Edit', edit_post_path(@post) %></td>
+    23:         <td><%= link_to 'Destroy', posts, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+    25:     <% end %>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /Users/mac/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281)
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:17:09 +0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:78:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 4833)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 3.7ms | Allocations: 11857)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"posts", :id=>nil}, missing required keys: [:id]):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:         <td><%= link_to 'Show', posts_path %></td>
+    22:         <td><%= link_to 'Edit', edit_post_path(@post) %></td>
+    23:         <td><%= link_to 'Destroy', posts, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    24:       </tr>
+    25:     <% end %>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:18:16 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:78:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 510.0ms | Allocations: 137945)
+Completed 500 Internal Server Error in 543ms (ActiveRecord: 0.6ms | Allocations: 140097)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `posts' for #<#<Class:0x00007fb5d7a0a6d8>:0x00007fb5d465eb40>
+Did you mean?  post
+               @posts):
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21: 
+    22:         <td><%= link_to 'Destroy', posts, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    23:       </tr>
+    24:     <% end %>
+    25:   </tbody>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:16
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:18:47 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:78:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 875)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1114ms (Views: 1109.7ms | ActiveRecord: 0.4ms | Allocations: 9274)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-10-13 02:18:56 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:78:in `get_user'
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 136.4ms | Allocations: 3578)
+  Rendered posts/new.html.erb within layouts/application (Duration: 153.6ms | Allocations: 3907)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 172ms (Views: 162.9ms | ActiveRecord: 0.3ms | Allocations: 9833)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-10-13 02:19:11 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"1ilYmM6+Aiza9TAUIJltfi5OujM48bR1y+7074QWtekXJgT5rX2iatnF9kw5qkN258DWRVBM1qVXWNZQ0tMuQQ==", "post"=>{"username"=>"", "title"=>"Hullo test 4", "body"=>"Hullo, this is test 4"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:78:in `get_user'
+[31mUnpermitted parameter: :username[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:32:in `block in create'
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Hullo test 4"], ["body", "Hullo, this is test 4"], ["created_at", "2020-10-12 22:19:11.855139"], ["updated_at", "2020-10-12 22:19:11.855139"], ["user_id", 2]]
+  ↳ app/controllers/posts_controller.rb:32:in `block in create'
+  [1m[35m (110.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:32:in `block in create'
+Redirected to http://127.0.0.1:3000/posts/3
+Completed 302 Found in 139ms (ActiveRecord: 111.7ms | Allocations: 7327)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2020-10-13 02:19:12 +0400
+  
+ActionController::RoutingError (No route matches [GET] "/posts/3"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/posts/3" for 127.0.0.1 at 2020-10-13 02:20:10 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/posts/3"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/posts" for 127.0.0.1 at 2020-10-13 02:20:16 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"G3zH+DCb6mLaVoN0l+kAzQuDa/Y8+G0BsloDbuZ4+8879Jp6tXJvmZaLHaeafp3KhpQH+Xo588fPL4cIznccQQ==", "post"=>{"username"=>"", "title"=>"Hullo test 4", "body"=>"Hullo, this is test 4"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:78:in `get_user'
+[31mUnpermitted parameter: :username[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `create'
+  [1m[36mPost Create (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Hullo test 4"], ["body", "Hullo, this is test 4"], ["created_at", "2020-10-12 22:20:16.338067"], ["updated_at", "2020-10-12 22:20:16.338067"], ["user_id", 2]]
+  ↳ app/controllers/posts_controller.rb:30:in `create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `create'
+No template found for PostsController#create, rendering head :no_content
+Completed 204 No Content in 86ms (ActiveRecord: 5.6ms | Allocations: 15099)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:20:19 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:78:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 745)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 43.6ms | ActiveRecord: 0.7ms | Allocations: 5783)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:22:13 +0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/mac/Desktop/micr/members_only/app/controllers/posts_controller.rb:78: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/posts_controller.rb:78: syntax error, unexpected `end', expecting end-of-input
+app/controllers/posts_controller.rb:78: syntax error, unexpected `end', expecting end-of-input
+app/controllers/posts_controller.rb:78: syntax error, unexpected `end', expecting end-of-input
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:22:22 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 17.0ms | Allocations: 3957)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 64ms (Views: 32.4ms | ActiveRecord: 3.4ms | Allocations: 14534)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-10-13 02:22:24 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 4.4ms | Allocations: 922)
+  Rendered posts/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1004)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 28.3ms | ActiveRecord: 0.2ms | Allocations: 6795)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-10-13 02:22:48 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"TK9FlfsXL82C7NbAslfeQjxolG6DsU0I2Km6r9is9AeNoBn0mNSPi4HcEJirZPBK9eb4GOsML9hEH5gQjmlvrw==", "post"=>{"username"=>"", "title"=>"Hullo Test5", "body"=>"Hullo, this is a test Post 5"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+[31mUnpermitted parameter: :username[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `create'
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Hullo Test5"], ["body", "Hullo, this is a test Post 5"], ["created_at", "2020-10-12 22:22:48.440853"], ["updated_at", "2020-10-12 22:22:48.440853"], ["user_id", 2]]
+  ↳ app/controllers/posts_controller.rb:30:in `create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `create'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.8ms | Allocations: 4097)
+
+
+  
+ArgumentError (too few arguments):
+  
+app/controllers/posts_controller.rb:31:in `format'
+app/controllers/posts_controller.rb:31:in `create'
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:23:50 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.1ms | Allocations: 3971)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 22.2ms | ActiveRecord: 1.9ms | Allocations: 15825)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-10-13 02:23:53 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 5.0ms | Allocations: 920)
+  Rendered posts/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1002)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 55.5ms | ActiveRecord: 0.2ms | Allocations: 6789)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-10-13 02:24:18 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"oskgqM8o5i+cxhDzrO49urw/9HWfy7n0YSoxjAMVpPRjxnzJrOtGaZ/21qu13ROydbGYA/d22yT9nBMzVdA/XA==", "post"=>{"username"=>"", "title"=>"Hello post 6", "body"=>"Hello, this is test post 6"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+[31mUnpermitted parameter: :username[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `create'
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Hello post 6"], ["body", "Hello, this is test post 6"], ["created_at", "2020-10-12 22:24:19.036675"], ["updated_at", "2020-10-12 22:24:19.036675"], ["user_id", 2]]
+  ↳ app/controllers/posts_controller.rb:30:in `create'
+  [1m[35m (44.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `create'
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 46.1ms | Allocations: 4092)
+
+
+  
+ArgumentError (too few arguments):
+  
+app/controllers/posts_controller.rb:31:in `format'
+app/controllers/posts_controller.rb:31:in `create'
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:27:14 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 16.1ms | Allocations: 3989)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 306ms (Views: 223.3ms | ActiveRecord: 3.8ms | Allocations: 15839)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2020-10-13 02:27:33 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 2.9ms | Allocations: 920)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1002)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 306ms (Views: 296.4ms | ActiveRecord: 0.2ms | Allocations: 6793)
+
+
+Started POST "/posts" for 127.0.0.1 at 2020-10-13 02:27:45 +0400
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"YlmUGn0DPd80151MAs8EqCazmZuhouXMyZVkdXNlJ9GjVsh7HsCdmTfnWxQb/Cqg7z317ckfhxxVI0bKJaC8eQ==", "post"=>{"username"=>"", "title"=>"Hullo test", "body"=>"Hullo test post 7"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+[31mUnpermitted parameter: :username[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `create'
+  [1m[36mPost Create (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Hullo test"], ["body", "Hullo test post 7"], ["created_at", "2020-10-12 22:27:45.835358"], ["updated_at", "2020-10-12 22:27:45.835358"], ["user_id", 2]]
+  ↳ app/controllers/posts_controller.rb:30:in `create'
+  [1m[35m (37.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `create'
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 38.9ms | Allocations: 4090)
+
+
+  
+ArgumentError (too few arguments):
+  
+app/controllers/posts_controller.rb:31:in `format'
+app/controllers/posts_controller.rb:31:in `create'
+Started GET "/posts" for 127.0.0.1 at 2020-10-13 02:31:45 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 4272)
+Completed 500 Internal Server Error in 257ms (ActiveRecord: 0.4ms | Allocations: 6429)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for #<User:0x00007fb5db8d6b50>):
+    15:   <tbody>
+    16:     <% @posts.each do |post| %>
+    17:       <tr>
+    18:        <td><%= post.user_id :value => current_user.user_id %></td>
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:       </tr>
+  
+app/views/posts/index.html.erb:18
+app/views/posts/index.html.erb:16
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:31:55 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 4016)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.5ms | Allocations: 5340)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for #<User:0x00007fb5d7c9e0e8>):
+    15:   <tbody>
+    16:     <% @posts.each do |post| %>
+    17:       <tr>
+    18:        <td><%= post.user_id :value => current_user.user_id %></td>
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:       </tr>
+  
+app/views/posts/index.html.erb:18
+app/views/posts/index.html.erb:16
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:31:58 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 4016)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms | Allocations: 5339)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for #<User:0x00007fb5d6c79870>):
+    15:   <tbody>
+    16:     <% @posts.each do |post| %>
+    17:       <tr>
+    18:        <td><%= post.user_id :value => current_user.user_id %></td>
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:       </tr>
+  
+app/views/posts/index.html.erb:18
+app/views/posts/index.html.erb:16
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:32:14 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 3850)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.4ms | Allocations: 6007)
+
+
+  
+ActionView::Template::Error (undefined method `username' for #<Post:0x00007fb5d7cdd478>
+Did you mean?  user=):
+    15:   <tbody>
+    16:     <% @posts.each do |post| %>
+    17:       <tr>
+    18:        <td><%= post.username %></td>
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:       </tr>
+  
+app/views/posts/index.html.erb:18
+app/views/posts/index.html.erb:16
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:32:30 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 3738)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.5ms | Allocations: 5895)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<Post:0x00007fb5d6c65c08>):
+    15:   <tbody>
+    16:     <% @posts.each do |post| %>
+    17:       <tr>
+    18:        <td><%= post.email %></td>
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:       </tr>
+  
+app/views/posts/index.html.erb:18
+app/views/posts/index.html.erb:16
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:32:41 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 961)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 495ms (Views: 489.5ms | ActiveRecord: 0.5ms | Allocations: 6875)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:38:46 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 813.9ms | Allocations: 141334)
+Completed 500 Internal Server Error in 824ms (ActiveRecord: 0.9ms | Allocations: 143512)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_id' for #<#<Class:0x00007fb5d7d37d10>:0x00007fb5d7d363e8>
+Did you mean?  user_session):
+    15:   <tbody>
+    16:     <% @posts.each do |post| %>
+    17:       <tr>
+    18:         <td><%= post.find(user_id).username %></td>
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:       </tr>
+  
+app/views/posts/index.html.erb:18
+app/views/posts/index.html.erb:16
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:39:56 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 3744)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.5ms | Allocations: 5895)
+
+
+  
+ActionView::Template::Error (undefined method `current_user' for #<Post:0x00007fb5d6c6a708>):
+    15:   <tbody>
+    16:     <% @posts.each do |post| %>
+    17:       <tr>
+    18:         <td><%= post.current_user.username %></td>
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:       </tr>
+  
+app/views/posts/index.html.erb:18
+app/views/posts/index.html.erb:16
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:40:40 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 3819)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.5ms | Allocations: 5970)
+
+
+  
+ActionView::Template::Error (undefined method `username' for #<Post:0x00007fb5de15c840>
+Did you mean?  user=):
+    15:   <tbody>
+    16:     <% @posts.each do |post| %>
+    17:       <tr>
+    18:         <td><%= post.username %></td>
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:       </tr>
+  
+app/views/posts/index.html.erb:18
+app/views/posts/index.html.erb:16
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:41:01 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 3710)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms | Allocations: 5861)
+
+
+  
+ActionView::Template::Error (undefined method `current_user' for #<Post:0x00007fb5d84571e0>):
+    15:   <tbody>
+    16:     <% @posts.each do |post| %>
+    17:       <tr>
+    18:         <td><%= post.current_user  %></td>
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:       </tr>
+  
+app/views/posts/index.html.erb:18
+app/views/posts/index.html.erb:16
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:41:05 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 3503)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.4ms | Allocations: 4821)
+
+
+  
+ActionView::Template::Error (undefined method `current_user' for #<Post:0x00007fb5d4785d98>):
+    15:   <tbody>
+    16:     <% @posts.each do |post| %>
+    17:       <tr>
+    18:         <td><%= post.current_user  %></td>
+    19:         <td><%= post.title %></td>
+    20:         <td><%= post.body %></td>
+    21:       </tr>
+  
+app/views/posts/index.html.erb:18
+app/views/posts/index.html.erb:16
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:43:59 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 3711)
+Completed 500 Internal Server Error in 226ms (ActiveRecord: 0.7ms | Allocations: 5862)
+
+
+  
+ActionView::Template::Error (undefined method `current_user' for #<Post:0x00007fb5d7a9cad8>):
+    15:   <tbody>
+    16:     <% @posts.each do |post| %>
+    17:       <tr>
+    18:         <td><%= post.current_user  %></td>
+    19: 
+    20:         <td><%= post.created_at %></td>
+    21:         <td><%= post.email %></td>
+  
+app/views/posts/index.html.erb:18
+app/views/posts/index.html.erb:16
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:45:40 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 3733)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.2ms | Allocations: 5884)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<Post:0x00007fb5d7d09190>):
+    21: 
+    22: 
+    23:         <td><%= post.created_at %></td>
+    24:         <td><%= post.email %></td>
+    25:       </tr>
+    26:     <% end %>
+    27:   </tbody>
+  
+app/views/posts/index.html.erb:24
+app/views/posts/index.html.erb:17
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:46:27 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (Duration: 367.6ms | Allocations: 141288)
+Completed 500 Internal Server Error in 376ms (ActiveRecord: 0.6ms | Allocations: 143439)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007fb5de0ffaf0>:0x00007fb5de0fe060>
+Did you mean?  @user):
+    20:         <td><%= post.body  %></td>
+    21: 
+    22: 
+    23:         <td><%= user.created_at %></td>
+    24:         <td><%= user.email %></td>
+    25:       </tr>
+    26:     <% end %>
+  
+app/views/posts/index.html.erb:23
+app/views/posts/index.html.erb:17
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:47:56 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (Duration: 732.1ms | Allocations: 141294)
+Completed 500 Internal Server Error in 831ms (ActiveRecord: 0.6ms | Allocations: 143445)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007fb5d6c3ee00>:0x00007fb5d6c3d190>
+Did you mean?  @user):
+    20:         <td><%= post.body  %></td>
+    21: 
+    22: 
+    23:         <td><%= user.created_at %></td>
+    24:         <td><%= post.current_user %></td>
+    25:       </tr>
+    26:     <% end %>
+  
+app/views/posts/index.html.erb:23
+app/views/posts/index.html.erb:17
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:48:15 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (Duration: 15.2ms | Allocations: 3714)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.4ms | Allocations: 5865)
+
+
+  
+ActionView::Template::Error (undefined method `current_user' for #<Post:0x00007fb5d6baf980>):
+    19:         <td><%= post.title  %></td>
+    20:         <td><%= post.body  %></td>
+    21: 
+    22:         <td><%= post.current_user %></td>
+    23:       </tr>
+    24:     <% end %>
+    25:   </tbody>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:17
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:48:37 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 997)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 963ms (Views: 956.7ms | ActiveRecord: 0.7ms | Allocations: 6906)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:49:56 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (Duration: 411.4ms | Allocations: 141316)
+Completed 500 Internal Server Error in 422ms (ActiveRecord: 0.4ms | Allocations: 143472)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_id' for #<#<Class:0x00007fb5d87164a8>:0x00007fb5d47a13e0>
+Did you mean?  user_session):
+    19:         <td><%= post.title  %></td>
+    20:         <td><%= post.body  %></td>
+    21: 
+    22:         <td><%= post.find(user_id).email %></td>
+    23:       </tr>
+    24:     <% end %>
+    25:   </tbody>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:17
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:50:23 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2753)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.5ms | Allocations: 4914)
+
+
+  
+ActionView::Template::Error (undefined method `email' for 2:Integer):
+    19:         <td><%= post.title  %></td>
+    20:         <td><%= post.body  %></td>
+    21: 
+    22:         <td><%= post.user_id.email %></td>
+    23:       </tr>
+    24:     <% end %>
+    25:   </tbody>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:17
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:50:34 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 3957)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.6ms | Allocations: 6118)
+
+
+  
+ActionView::Template::Error (undefined method `User' for #<Post:0x00007fb5d6c933b0>
+Did you mean?  user=):
+    19:         <td><%= post.title  %></td>
+    20:         <td><%= post.body  %></td>
+    21: 
+    22:         <td><%= post.User.email %></td>
+    23:       </tr>
+    24:     <% end %>
+    25:   </tbody>
+  
+app/views/posts/index.html.erb:22
+app/views/posts/index.html.erb:17
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:50:40 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 25.0ms | Allocations: 5962)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 393ms (Views: 386.7ms | ActiveRecord: 1.2ms | Allocations: 11881)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:53:59 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 20.3ms | Allocations: 5923)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 34.4ms | ActiveRecord: 1.0ms | Allocations: 11816)
+
+
+Started GET "/" for 127.0.0.1 at 2020-10-13 02:54:27 +0400
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:75:in `get_user'
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:17
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:22
+  Rendered posts/index.html.erb within layouts/application (Duration: 18.2ms | Allocations: 5921)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 32.4ms | ActiveRecord: 0.8ms | Allocations: 11798)
+
+
