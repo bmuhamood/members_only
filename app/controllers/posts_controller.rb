@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :get_user
+  before_action :user_get
   before_action :set_post, only: %i[show edit update destroy]
 
   # GET /posts
@@ -69,7 +69,7 @@ class PostsController < ApplicationController
     params.require(:post).permit(:user_id, :title, :body)
   end
 
-  def get_user
+  def user_get
     @user = current_user
   end
 end
