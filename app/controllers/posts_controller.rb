@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :get_user  
+  before_action :get_user
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts
@@ -28,13 +28,10 @@ class PostsController < ApplicationController
   def create
     @post = current_user.posts.build(post_params)
       if @post.save
-        format.html { redirect_to root_path, notice: 'Post was successfully created.' }
-        format.json { render :show, status: :created, location: @post }
+        redirect_to root_path
       else
-        format.html { render :new }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
+        render new_post_path
       end
-  end
 end
 
   # PATCH/PUT /posts/1

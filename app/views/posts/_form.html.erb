@@ -10,12 +10,7 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :username %>
     <%= form.hidden_field :user_id, :value => current_user.id %>
-  </div>
-
   <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title %>
