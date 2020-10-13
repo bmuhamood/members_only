@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :get_user
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_post, only: %i[show edit update destroy]
 
   # GET /posts
   # GET /posts.json
@@ -10,8 +10,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1
   # GET /posts/1.json
-  def show
-  end
+  def show; end
 
   # GET /posts/new
   def new
@@ -27,12 +26,12 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = current_user.posts.build(post_params)
-      if @post.save
-        redirect_to root_path
-      else
-        render new_post_path
-      end
-end
+    if @post.save
+      redirect_to root_path
+    else
+      render new_post_path
+    end
+  end
 
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
@@ -59,17 +58,18 @@ end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_post
-      @post = Post.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def post_params
-      params.require(:post).permit(:user_id, :title, :body)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_post
+    @post = Post.find(params[:id])
+  end
 
-    def get_user
-      @user = current_user
-    end
+  # Only allow a list of trusted parameters through.
+  def post_params
+    params.require(:post).permit(:user_id, :title, :body)
+  end
+
+  def get_user
+    @user = current_user
+  end
 end
